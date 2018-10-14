@@ -2,10 +2,12 @@
 -- Create Date v1.0: 12/5/2012 3:46:29 AM
 -- Author      : Shuraken - all modification
 -- Create Date v1.5: 25/04/2015 15:28:55 AM
+-- Author      : thekk - add german to chat roll messages
+-- Create Date v1.9: 08/09/2018 13:56 PM
 
 ZGLoot.Active = false
 ZGLoot.LastMess = nil
-ZGLoot.CurrentVers = 1.8
+ZGLoot.CurrentVers = 1.9
 ZGLoot.Tier_one = {
 16828, 16830,
 16850, 16851, 
@@ -380,7 +382,7 @@ function ZGLoot.ChatMessageChange(message)
 	local _, _, start, Roll, link, finish
 	local type = strsub("CHAT_MSG_LOOT", 10) 
 	local info = ChatTypeInfo[type]
-	if GetLocale() == "enUS" then
+	if ( GetLocale() == "enEN" or GetLocale() == "enGB" or GetLocale() == "enUS" or GetLocale() == "deDE" ) then
 		_, _, start, link, finish = string.find(message, "([^|]+)(|?c?f?f?%x|?H?[^:]*:?%d*:?%d*:?%d*:%d*|?h?%[.+%]|h|r)(.*)")
 	else
 		_, _, start, Color, Roll, middle, link, finish = string.find(message, "([^|]+)(|?c?f?f?%x%x%x%x%x%x)(%d+)|r([^|]+)(|?c?f?f?%x|?H?[^:]*:?%d*:?%d*:?%d*:%d*|?h?%[.+%]|h|r)(.*)")
@@ -399,7 +401,7 @@ function ZGLoot.ChatMessageChange(message)
 	else
 		if string.find(start, ZGLoot.RollNames["Roll"]) then
 			local _, _, RollType = string.find(start, "^(%a+)")
-			if GetLocale() ~= "enUS" then
+			if ( GetLocale() == "enEN" or GetLocale() == "enGB" or GetLocale() == "enUS" or GetLocale() == "deDE" ) then
 				_, _, RollType = string.find(start, "(%b\"\")")
 			end
 			if not Roll then

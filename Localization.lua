@@ -1,3 +1,10 @@
+-- Author      : e-Will - design and idea
+-- Create Date v1.0: 12/5/2012 3:46:29 AM
+-- Author      : Shuraken - all modification
+-- Create Date v1.5: 25/04/2015 15:28:55 AM
+-- Author      : thekk - german translation
+-- Create Date v1.9: 08/09/2018 13:56 PM
+
 ZGLoot = {}
 
 if ( GetLocale() == "ruRU" ) then
@@ -133,7 +140,7 @@ if ( GetLocale() == "ruRU" ) then
 	
 	ZGLoot.Zones = {"Зул'Гуруб", "Руины Ан'Киража", "Ан'Кираж", "Огненные Недра"}
 	
-else
+elseif ( GetLocale() == "enEN" or GetLocale() == "enGB" or GetLocale() == "enUS") then
 	
 	ZGLoot.Data = {
 		[1] = {
@@ -265,5 +272,138 @@ else
 	}
 	
 	ZGLoot.Zones = {"Zul'Gurub", "Ruins of Ahn'Qiraj", "Temple of Ahn'Qiraj", "Molten Core"}
+	
+elseif ( GetLocale() == "deDE" ) then
+	
+	ZGLoot.Data = {
+		[1] = {
+			["tooltip"] = "Schmuckst\195\188cke",
+			["texture"] = [[Interface\Icons\INV_Bijou_Gold]],
+			["items"] = {
+				{["name"] = "Blaues Schmuckst\195\188ck der Hakkari",   ["texture"] = [[Interface\Icons\INV_Bijou_Blue]],   ["tooltip"] = {"|cff0070ddBlaues Schmuckst\195\188ck der Hakkari",   "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Rotes Schmuckst\195\188ck der Hakkari",    ["texture"] = [[Interface\Icons\INV_Bijou_Red]],    ["tooltip"] = {"|cff0070ddRotes Schmuckst\195\188ck der Hakkari",    "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Gelbes Schmuckst\195\188ck der Hakkari", ["texture"] = [[Interface\Icons\INV_Bijou_Yellow]], ["tooltip"] = {"|cff0070ddGelbes Schmuckst\195\188ck der Hakkari", "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Orangefarbenes Schmuckst\195\188ck der Hakkari", ["texture"] = [[Interface\Icons\INV_Bijou_Orange]], ["tooltip"] = {"|cff0070ddOrangefarbenes Schmuckst\195\188ck der Hakkari", "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Grünes Schmuckst\195\188ck der Hakkari",  ["texture"] = [[Interface\Icons\INV_Bijou_Green]],  ["tooltip"] = {"|cff0070ddGrünes Schmuckst\195\188ck der Hakkari",  "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Lila Schmuckst\195\188ck der Hakkari", ["texture"] = [[Interface\Icons\INV_Bijou_Purple]], ["tooltip"] = {"|cff0070ddLila Schmuckst\195\188ck der Hakkari", "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Bronzefarbenes Schmuckst\195\188ck der Hakkari", ["texture"] = [[Interface\Icons\INV_Bijou_Bronze]], ["tooltip"] = {"|cff0070ddBronzefarbenes Schmuckst\195\188ck der Hakkari", "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Silbernes Schmuckst\195\188ck der Hakkari", ["texture"] = [[Interface\Icons\INV_Bijou_Silver]], ["tooltip"] = {"|cff0070ddSilbernes Schmuckst\195\188ck der Hakkari", "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+				{["name"] = "Goldenes Schmuckst\195\188ck der Hakkari",   ["texture"] = [[Interface\Icons\INV_Bijou_Gold]],   ["tooltip"] = {"|cff0070ddGoldenes Schmuckst\195\188ck der Hakkari",   "|cffFFFFFFRequied Level 58", "|cffFFD100\"A significant Paragon of Power from the\nGurubashi Empire.\""}},
+			}
+		},
+		[2] = {
+			["tooltip"] = "M\195\188nzen",
+			["texture"] = [[Interface\Icons\INV_Misc_Coin_12]],
+			["items"] = {
+				{["name"] = "Zulianische M\195\188nze", 		  ["texture"] = [[Interface\Icons\INV_Misc_ArmorKit_11]], ["tooltip"] = {"|cff1eff00Zulianische M\195\188nze", 		 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Razzashi", 	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_10]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Razzashi", 	 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Hakkari", 	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_09]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Hakkari", 		 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Gurubashi", 	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_07]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Gurubashi", 	 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Vilebranch", 	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_13]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Vilebranch", 	 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Witherbark",	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_14]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Witherbark", 	 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Sandfury", 	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_15]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Sandfury", 	 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Skullsplitter", ["texture"] = [[Interface\Icons\INV_Misc_Coin_12]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Skullsplitter", "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+				{["name"] = "M\195\188nze der Bloodscalb", 	  ["texture"] = [[Interface\Icons\INV_Misc_Coin_11]], 	  ["tooltip"] = {"|cff1eff00M\195\188nze der Bloodscalb", 	 "|cffFFD100\"One of the lesser Paragons of Power from the\n Gurubashi Empire.\""}},
+			}
+		},
+		[3] = {
+			["tooltip"] = "Skarab\195\164en",
+			["texture"] = [[Interface\Icons\INV_Scarab_Gold]],
+			["items"] = {
+				{["name"] = "Steinskarab\195\164us",   ["texture"] = [[Interface\Icons\INV_Scarab_Stone]],   ["tooltip"] = {"|cff1eff00Steinskarab\195\164us"}},
+				{["name"] = "Goldskarab\195\164us",    ["texture"] = [[Interface\Icons\INV_Scarab_Gold]],    ["tooltip"] = {"|cff1eff00Goldskarab\195\164us"}},
+				{["name"] = "Silberskarab\195\164us",  ["texture"] = [[Interface\Icons\INV_Scarab_Silver]],  ["tooltip"] = {"|cff1eff00Silberskarab\195\164us"}},
+				{["name"] = "Bronzeskarab\195\164us",  ["texture"] = [[Interface\Icons\INV_Scarab_Bronze]],  ["tooltip"] = {"|cff1eff00Bronzeskarab\195\164us"}},
+				{["name"] = "Kristallskarab\195\164us", ["texture"] = [[Interface\Icons\INV_Scarab_Crystal]], ["tooltip"] = {"|cff1eff00Kristallskarab\195\164us"}},
+				{["name"] = "Tonskarab\195\164us",    ["texture"] = [[Interface\Icons\INV_Scarab_Clay]],    ["tooltip"] = {"|cff1eff00Tonskarab\195\164us"}},
+				{["name"] = "Knochenskarab\195\164us",    ["texture"] = [[Interface\Icons\INV_Scarab_Bone]],    ["tooltip"] = {"|cff1eff00Knochenskarab\195\164us"}},
+				{["name"] = "Elfenbeinskarab\195\164us",   ["texture"] = [[Interface\Icons\INV_Scarab_Ivory]],   ["tooltip"] = {"|cff1eff00Elfenbeinskarab\195\164us"}},
+			}
+		},
+		[4] = {
+			["tooltip"] = "G\195\182tzen aus AQ20",
+			["texture"] = [[Interface\Icons\INV_QirajIdol_Jasper]],
+			["items"] = {
+				{["name"] = "Azurg\195\182tze",		["texture"] = [[Interface\Icons\INV_QirajIdol_Azure]], 	   ["tooltip"] = {"|cff0070ddAzurg\195\182tze",      "|cffFFFFFFClasses: J\195\164ger, Schurke, Magier"}},
+				{["name"] = "Z\195\188ngelnde G\195\182tze",	["texture"] = [[Interface\Icons\INV_QirajIdol_Lambent]],    ["tooltip"] = {"|cff0070ddZ\195\188ngelnde G\195\182tze",    "|cffFFFFFFClasses: Krieger, J\195\164ger, Priester"}},
+				{["name"] = "Bernsteing\195\182tze",		["texture"] = [[Interface\Icons\INV_QirajIdol_Amber]], 	   ["tooltip"] = {"|cff0070ddBernsteing\195\182tze", 	   "|cffFFFFFFClasses: Paladin, J\195\164ger, Schamane, Hexenmeister"}},
+				{["name"] = "Jaspisg\195\182tze",		["texture"] = [[Interface\Icons\INV_QirajIdol_Jasper]], 	   ["tooltip"] = {"|cff0070ddJaspisg\195\182tze", 	   "|cffFFFFFFClasses: Priester, Hexenmeister, Druide"}},
+				{["name"] = "Obsidiang\195\182tze",	["texture"] = [[Interface\Icons\INV_QirajIdol_Obsidian]],   ["tooltip"] = {"|cff0070ddObsidiang\195\182tze",   "|cffFFFFFFClasses: Paladin, Priester, Schamane, Magier"}},
+				{["name"] = "Zinnoberg\195\182tze",	["texture"] = [[Interface\Icons\INV_QirajIdol_Vermillion]], ["tooltip"] = {"|cff0070ddZinnoberg\195\182tze", "|cffFFFFFFClasses: Paladin, Schurke, Schamane, Druide"}},
+				{["name"] = "Alabasterg\195\182tze",	["texture"] = [[Interface\Icons\INV_QirajIdol_Alabaster]],  ["tooltip"] = {"|cff0070ddAlabasterg\195\182tze",  "|cffFFFFFFClasses: Krieger, Magier, Druide"}},
+				{["name"] = "Onyxg\195\182tze",		["texture"] = [[Interface\Icons\INV_QirajIdol_Onyx]], 	   ["tooltip"] = {"|cff0070ddOnyxg\195\182tze", 	   "|cffFFFFFFClasses: Krieger, Schurke, Hexenmeister"}},
+			}
+		},
+		[5] = {
+			["tooltip"] = "G\195\182tzen aus AQ40",
+			["texture"] = [[Interface\Icons\INV_QirajIdol_Sun]],
+			["items"] = {
+				{["name"] = "G\195\182tze des Lebens", 	["texture"] = [[Interface\Icons\INV_QirajIdol_Life]],    ["tooltip"] = {"|cff0070ddG\195\182tze des Lebens",     "|cffFFFFFFClasses: Paladin, J\195\164ger, Priester, Schamane, Druide"}},
+				{["name"] = "G\195\182tze der Weisen", ["texture"] = [[Interface\Icons\INV_QirajIdol_Sage]],    ["tooltip"] = {"|cff0070ddG\195\182tze der Weisen", "|cffFFFFFFClasses: Paladin, Priester, Schamane, Magier, Hexenmeister"}},
+				{["name"] = "G\195\182tze des Kampfes",   ["texture"] = [[Interface\Icons\INV_QirajIdol_Strife]],  ["tooltip"] = {"|cff0070ddG\195\182tze des Kampfes",   "|cffFFFFFFClasses: Paladin, J\195\164ger, Schurke, Schamane, Druide"}},
+				{["name"] = "G\195\182tze des Krieges", 	    ["texture"] = [[Interface\Icons\INV_QirajIdol_War]], 	 ["tooltip"] = {"|cff0070ddG\195\182tze des Krieges", 	  "|cffFFFFFFClasses: Krieger, J\195\164ger, Schurke, Druide"}},
+				{["name"] = "G\195\182tze der Wiedergeburt",  ["texture"] = [[Interface\Icons\INV_QirajIdol_Rebirth]], ["tooltip"] = {"|cff0070ddG\195\182tze der Wiedergeburt",  "|cffFFFFFFClasses: Paladin, Priester, Schamane, Hexenmeister, Druide"}},
+				{["name"] = "G\195\182tze des Todes",    ["texture"] = [[Interface\Icons\INV_QirajIdol_Death]],   ["tooltip"] = {"|cff0070ddG\195\182tze des Todes", 	  "|cffFFFFFFClasses: Krieger, Priester, Magier, Hexenmeister"}},
+				{["name"] = "G\195\182tze der Nacht",    ["texture"] = [[Interface\Icons\INV_QirajIdol_Night]],   ["tooltip"] = {"|cff0070ddG\195\182tze der Nacht",  "|cffFFFFFFClasses: Krieger, Schurke, Magier, Hexenmeister"}},
+				{["name"] = "G\195\182tze der Sonne",  ["texture"] = [[Interface\Icons\INV_QirajIdol_Sun]], 	 ["tooltip"] = {"|cff0070ddG\195\182tze der Sonne",  "|cffFFFFFFClasses: Krieger, J\195\164ger, Schurke, Magier"}},
+			},
+		},
+		[6] = {
+			["tooltip"] = "Loot aus Molten Core",
+			["texture"] = [[Interface\Icons\Spell_Fire_SealOfFire]],
+			["items"] = {
+				{["name"] = "Lavakern", 	  ["texture"] = [[Interface\Icons\Spell_Nature_Earthquake]], ["tooltip"] = {"|cff0070ddLavakern"}},
+				{["name"] = "Feuerkern",	  ["texture"] = [[Interface\Icons\Spell_Fire_FlameBolt]],    ["tooltip"] = {"|cff0070ddFeuerkern"}},
+				{["name"] = "Sulfuronblock", ["texture"] = [[Interface\Icons\Spell_Fire_SealOfFire]],   ["tooltip"] = {"|cffa335eeSulfuronblock"}},
+				{["name"] = "Tier 1", 		  ["texture"] = [[Interface\Icons\INV_Belt_29]], 		     ["tooltip"] = {"|cffa335eeTier 1 G\195\188rtel und Armschienen"}},
+			},
+		},
+		[7] = {
+			["tooltip"] = "Trash Loot",
+			["texture"] = [[Interface\Icons\INV_Sword_22]],
+			["items"] = {
+				{["name"] = "Epische Items",	  ["texture"] = [[Interface\Icons\INV_Sword_22]],	   ["tooltip"] = {"|cffa335eeEpische Items"}},
+				{["name"] = "Rare Items", 	  ["texture"] = [[Interface\Icons\INV_Staff_34]],	   ["tooltip"] = {"|cff0070ddRare Items"}},
+				{["name"] = "Seltene Items", ["texture"] = [[Interface\Icons\INV_Chest_Plate16]], ["tooltip"] = {"|cff1eff00Seltene Items"}},
+			},
+		},
+	}
+	
+	ZGLoot.TitleNames = {
+		["All Need"] = "Alle Bedarf",
+		["All Greed"] = "Alle Gier",
+		["All Pass"] = "Alle passen",
+		["Check My Class"] = "Pr\195\188fe meine Klasse",
+		["Check My Class Tooltip"] = "Diese Option wird automatisch\n die G\195\182tzen nach deiner Klasse ausw\195\164hlen",
+		["Roll"] = "Wurf",
+		["Roll option 1"] = "W\195\188rfelnachrichten nicht ver\195\164ndern!",
+		["Roll option 2"] = "Entferne alle W\195\188rfelnachrichten!",
+		["Roll option 3"] = "Zeige Nachricht, wenn du gewinnst, mit Informationen zum Wurf.",
+		["Roll option 4"] = "Zeige Nachricht, wenn du gewinnst mit extra Information zum n\195\164chst tieferen Wurf.",
+		["Roll option 5"] = "Zeige Nachricht wenn irgendjemand gewinnt.",
+		["Roll option 6"] = "Zeige Nachricht, wenn irgendjemand gewinnt mit extra Information zu deinem Wurf.",
+		["Roll option 1 Tooltip"] = "Du wirst keinen Unterschied bemerken",
+		["Roll option 2 Tooltip"] = "Du wirst wirklich keinen Unterschied bemerken!",
+		["Roll option 3 Tooltip"] = [[|cff00AA00Du gewinnst|r |cff1eff00[Zulianische M\195\188nze]|r |cff00AA00mit Bedarfswurf 65|r]],
+		["Roll option 4 Tooltip"] = [[|cff00AA00Du gewinnst |r|cff1eff00[Zulianische M\195\188nze]|r |cff00AA00mit Gierwurf 90, N\195\164chster: Ora, Ninjalooter mit Wurf 90|r]],
+		["Roll option 5 Tooltip"] = [[|cff00AA00Ninjalooter gewinnt |r|cff1eff00[Zulianische M\195\188nze]|r |cff00AA00mit Bedarfswurf 99|r]],
+		["Roll option 6 Tooltip"] = [[|cff00AA00Xitasha gewinnt |r|cff1eff00[Zulianische M\195\188nze]|r |cff00AA00mit Gierwurf 100, Du hast gew\195\188rfelt 1|r]],
+	}
+	
+	ZGLoot.RollNames = {
+		["Need"] = "Bedarf",
+		["Greed"] = "Gier",
+		["You"] = "Du",
+		["won"] = "gewinnst",
+		["won1"] = "gewonnen",
+		[", Nearest:"] = ", N\195\164chster:",
+		[" with roll "] = " mit wurf ",
+		[" with "] = " mit ",
+		["Roll"] = "Wurf",
+		[", You rolled "] = ", Du hast gew\195\188rfelt ",
+		["Everyone pass"] = "Alle haben gepasst",
+	}
+	
+	ZGLoot.Zones = {"Zul'Gurub", "Die Ruinen von Ahn'Qiraj", "Der Tempel von Ahn'Qiraj", "Geschmolzener Kern"}
 	
 end
